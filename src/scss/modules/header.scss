@@ -61,7 +61,7 @@ header{
     }
 }
 
-@media(min-width:320px) and (max-width: 600px){
+@media(min-width:320px) and (max-width: 641px){
     h1{
         font-size: 200%
     }
@@ -71,5 +71,17 @@ header{
     }
 
 
+}
+
+@media(min-width:642px) and (max-width: 1007px){
+    ul{
+        padding: 0;
+        li{
+            margin-right: 5px;
+        }
+    }
+}
+@media(min-width:1008px){
+    
 }
 

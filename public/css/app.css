@@ -58,7 +58,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   height: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 641px) {
   h1 {
     font-size: 200%;
   }
@@ -67,6 +67,53 @@ header .nav ul a:last-of-type button:last-of-type:hover {
     flex-direction: column;
   }
 }
+@media (min-width: 642px) and (max-width: 1007px) {
+  ul {
+    padding: 0;
+  }
+  ul li {
+    margin-right: 5px;
+  }
+}
+.presentation {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+.presentation .presentGlob {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.presentation .presentGlob .shop {
+  width: 50%;
+}
+.presentation .presentGlob .shop span {
+  color: #df4340;
+  font-size: 200%;
+}
+.presentation .presentGlob .shop h1 {
+  font-size: 300%;
+  margin: 0;
+}
+.presentation .presentGlob .shop button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #df4340;
+  color: white;
+  border: 1px solid #df4340;
+}
+.presentation .presentGlob .imageTshirt {
+  width: 40%;
+}
+.presentation .presentGlob .imageTshirt img {
+  width: 70%;
+}
+
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
