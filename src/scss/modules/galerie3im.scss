@@ -1,0 +1,57 @@
+.galerie3{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+
+    
+    
+    .living{
+        width: 32%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../public/img/services/service-1.jpg');
+        background-size: cover;
+        h1{
+            color: white;
+            border-bottom:1px solid white;
+            font-weight: normal;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+    .sale{
+        width: 32%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../public/img/services/service-2.jpg');
+        background-size: cover;
+        h1{
+        color: white;
+        border-bottom:1px solid white;
+        font-weight: normal;
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+    }
+    .clothes{
+        width: 32%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../public/img/services/slider-3.jpg');
+        background-size: cover;
+        h1{
+        color: white;
+        border-bottom:1px solid white;
+        font-weight: normal;
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+        
+    }
+}
