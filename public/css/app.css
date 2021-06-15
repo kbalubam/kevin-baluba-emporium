@@ -12,9 +12,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-header h1 {
-  font-size: 300%;
-}
 header .nav {
   width: 80%;
 }
@@ -61,6 +58,15 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   height: 20px;
 }
 
+@media (min-width: 320px) and (max-width: 600px) {
+  h1 {
+    font-size: 200%;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+}
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
