@@ -237,20 +237,38 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 .products .productGlob .range1 .product1 .img1 {
   position: relative;
 }
-.products .productGlob .range1 .product1 .img1::before {
-  content: "";
-  background: black;
+.products .productGlob .range1 .product1 .img1 .view {
+  display: flex;
   position: absolute;
+  width: 100%;
+  bottom: -4px;
+}
+.products .productGlob .range1 .product1 .img1 .view .black {
   width: 50%;
-  height: 0;
-  transition: 1s ease;
-  bottom: 0;
+  background-color: black;
   opacity: 0.6;
 }
-.products .productGlob .range1 .product1 .img1:hover::before {
-  z-index: 1;
-  height: 50px;
+.products .productGlob .range1 .product1 .img1 .view .black span {
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .productGlob .range1 .product1 .img1 .view .red {
   width: 50%;
+  background-color: red;
+  opacity: 0.6;
+}
+.products .productGlob .range1 .product1 .img1 .view .red span {
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .productGlob .range1 .product1 .img:hover .view .black {
+  height: 40px;
 }
 .products .productGlob .range1 .product1 img {
   width: 100%;
@@ -298,90 +316,104 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 }
 
 @media (min-width: 320px) and (max-width: 641px) {
-  .prix1 {
+  .product1 .img1 .view .black {
+    height: 10px;
+  }
+  .product1 .img1 .view .black span {
+    font-size: 10px;
+  }
+  .product1 .img1 .view .red {
+    height: 10px;
+  }
+  .product1 .img1 .view .red span {
+    font-size: 10px;
+  }
+  .product1 .prix1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   }
-  .prix1 span {
+  .product1 .prix1 span {
     font-size: 10px;
   }
-  .prix1 p {
-    color: #df4340;
+  .product1 .prix1 p {
     font-size: 10px;
   }
-
-  .prix2 {
+  .product1 .prix2 {
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
     flex-direction: column;
   }
-  .prix2 .sale {
+  .product1 .prix2 .sale {
     display: none;
   }
-  .prix2 .saleProduct span {
+  .product1 .prix2 .saleProduct span {
     font-size: 10px;
   }
-  .prix2 .saleProduct .prixbarre {
+  .product1 .prix2 .saleProduct .prixbarre {
     display: flex;
   }
-  .prix2 .saleProduct .prixbarre span {
+  .product1 .prix2 .saleProduct .prixbarre span {
     font-size: 10px;
   }
-  .prix2 .saleProduct .prixbarre p:first-of-type {
-    text-decoration: line-through;
-    color: grey;
+  .product1 .prix2 .saleProduct .prixbarre p:first-of-type {
     margin-right: 2%;
     font-size: 10px;
   }
-  .prix2 .saleProduct p:nth-of-type(2) {
-    color: #df4340;
+  .product1 .prix2 .saleProduct p:nth-of-type(2) {
     font-size: 10px;
   }
 }
 @media (min-width: 642px) and (max-width: 1007px) {
-  .prix1 {
+  .product1 .img1 .view .black {
+    height: 25px;
+  }
+  .product1 .img1 .view .black span {
+    font-size: 25px;
+  }
+  .product1 .img1 .view .red {
+    height: 25px;
+  }
+  .product1 .img1 .view .red span {
+    font-size: 25px;
+  }
+  .product1 .prix1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   }
-  .prix1 span {
+  .product1 .prix1 span {
     font-size: 15px;
   }
-  .prix1 p {
-    color: #df4340;
+  .product1 .prix1 p {
     font-size: 15px;
   }
-
-  .prix2 {
+  .product1 .prix2 {
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
     flex-direction: column;
   }
-  .prix2 .sale {
+  .product1 .prix2 .sale {
     display: none;
   }
-  .prix2 .saleProduct span {
+  .product1 .prix2 .saleProduct span {
     font-size: 15px;
   }
-  .prix2 .saleProduct .prixbarre {
+  .product1 .prix2 .saleProduct .prixbarre {
     display: flex;
   }
-  .prix2 .saleProduct .prixbarre span {
+  .product1 .prix2 .saleProduct .prixbarre span {
     font-size: 15px;
   }
-  .prix2 .saleProduct .prixbarre p:first-of-type {
-    text-decoration: line-through;
-    color: grey;
+  .product1 .prix2 .saleProduct .prixbarre p:first-of-type {
     margin-right: 2%;
     font-size: 15px;
   }
-  .prix2 .saleProduct p:nth-of-type(2) {
-    color: #df4340;
+  .product1 .prix2 .saleProduct p:nth-of-type(2) {
     font-size: 15px;
   }
 }
@@ -439,6 +471,95 @@ header .nav ul a:last-of-type button:last-of-type:hover {
     padding: 10px;
   }
 }
+.fashion {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fashion .fashionGlob {
+  width: 60%;
+}
+.fashion .fashionGlob .hot {
+  width: 30%;
+}
+.fashion .fashionGlob .hot img {
+  width: 100%;
+}
+
+.infos {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.infos .infoTrust {
+  background-color: #f3f3f3;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.infos .infoTrust i {
+  font-size: 35px;
+}
+.infos .infoTrust p {
+  text-align: center;
+}
+.infos .infoTrust button {
+  background-color: #343a40;
+  color: white;
+  border: 1px solid #343a40;
+  padding: 2%;
+  border-radius: 3px;
+}
+.infos .fastShipping {
+  background-color: #df4340;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+.infos .fastShipping i {
+  color: white;
+  font-size: 35px;
+}
+.infos .fastShipping h3 {
+  color: white;
+}
+.infos .fastShipping p {
+  text-align: center;
+  color: white;
+}
+.infos .fastShipping button {
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 3px;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer1 {
+  width: 70%;
+  background-color: #383c44;
+}
+footer .footer1 .about {
+  display: flex;
+}
+footer .footer1 .about ul:first-of-type {
+  width: 30%;
+}
+
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

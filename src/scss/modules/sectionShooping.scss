@@ -12,23 +12,67 @@
                 width: 30%;
                 .img1{
                     position: relative;
+                    .view{  
+                        display: flex;
+                        position: absolute;
+                        width: 100%;
+                        bottom: -4px;
+                        
+                        .black{
+                            // height: 40px;
+                            width: 50%;
+                            background-color: black;
+                            opacity: 0.6;
+                            span{
+                                color:white;
+                                font-size: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+
+                        .red{
+                            // height: 40px;
+                            width: 50%;
+                            background-color:red;
+                            opacity: 0.6;
+                            span{
+                                color:white;
+                                font-size: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+
+                        }
+                    }
+                }.img:hover{
+                    .view{
+                        .black{
+                            height: 40px;
+                        }
+                    }
                 }
-                .img1::before{
-                content: "";
                 
-                background: black;
-                position: absolute;
-                width: 50%;
-                height: 0;
-                transition: 1s ease;
-                bottom: 0;
-                opacity: 0.6;
-                }
-                .img1:hover::before{
-                z-index: 1;
-                height: 50px;
-                width: 50%;
-                }
+                // .img1::before{
+                // content: "";
+                
+                // background: black;
+                // position: absolute;
+                // width: 50%;
+                // height: 0;
+                // transition: 1s ease;
+                // bottom: 0;
+                // opacity: 0.6;
+                // }
+                // .img1:hover::before{
+                // z-index: 1;
+                // height: 50px;
+                // width: 50%;
+                
+                // }
                 
                 img{
                     width: 100%;
@@ -83,6 +127,7 @@
                 }
                 
             }
+            
            
             
 
@@ -91,95 +136,144 @@
 }
 
 @media(min-width:320px) and (max-width:641px){
-    .prix1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-        span{
-            font-size: 10px;
+    .product1{
+        .img1{
+            .view{  
+                .black{
+                    height: 10px;
+                    
+                    span{
+                        font-size: 10px;
+                    }
+                }
+
+                .red{
+                    height: 10px;
+                    
+                    span{
+                        font-size: 10px;
+                    }
+                    
+
+                }
+            }
         }
-        p{
-            color: rgba(223,67,64,255);
-            font-size: 10px;
-        }
-    }
-    .prix2{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        flex-direction: column;
-        
-        .sale{
-        display: none; //not working
-        }
-        .saleProduct{
+        .prix1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
             span{
                 font-size: 10px;
             }
-            .prixbarre{
-                display: flex;
-                span{
-                    font-size: 10px;
-                }
-                p:first-of-type{
-                    text-decoration: line-through;
-                    color:grey;
-                    margin-right: 2%;
-                    font-size: 10px;
-                    }
-                }
-                p:nth-of-type(2){
-                color:rgba(223,67,64,255);
+            p{
                 font-size: 10px;
             }
         }
-    }    
+        .prix2{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5%;
+            flex-direction: column;
+            
+            .sale{
+            display: none; //not working
+            }
+            .saleProduct{
+                span{
+                    font-size: 10px;
+                }
+                .prixbarre{
+                    display: flex;
+                    span{
+                        font-size: 10px;
+                    }
+                    p:first-of-type{
+                        margin-right: 2%;
+                        font-size: 10px;
+                        }
+                    }
+                    p:nth-of-type(2){
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
+    
+    
+    
+   
 }
 
 @media(min-width:642px) and (max-width:1007px){
-    .prix1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-        span{
-            font-size: 15px;
+    .product1{
+        .img1{
+            .view{  
+                .black{
+                    height: 25px;
+                    
+                    span{
+                        font-size: 25px;
+                    }
+                }
+
+                .red{
+                    height: 25px;
+                    
+                    span{
+                        font-size: 25px;
+                    }
+                    
+
+                }
+            }
         }
-        p{
-            color: rgba(223,67,64,255);
-            font-size: 15px;
-        }
-    }
-    .prix2{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        flex-direction: column;
-        
-        .sale{
-        display: none; //not working
-        }
-        .saleProduct{
+        .prix1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
             span{
                 font-size: 15px;
             }
-            .prixbarre{
-                display: flex;
-                span{
-                    font-size: 15px;
-                }
-                p:first-of-type{
-                    text-decoration: line-through;
-                    color:grey;
-                    margin-right: 2%;
-                    font-size: 15px;
-                    }
-                }
-                p:nth-of-type(2){
-                color:rgba(223,67,64,255);
+            p{
                 font-size: 15px;
             }
         }
-    }    
+        .prix2{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5%;
+            flex-direction: column;
+            
+            .sale{
+            display: none; //not working
+            }
+            .saleProduct{
+                span{
+                    font-size: 15px;
+                }
+                .prixbarre{
+                    display: flex;
+                    span{
+                        font-size: 15px;
+                    }
+                    p:first-of-type{
+                        
+                        margin-right: 2%;
+                        font-size: 15px;
+                        }
+                    }
+                    p:nth-of-type(2){
+                    
+                    font-size: 15px;
+                }
+            }
+        }    
+
+    }
+    
+    
 }
+

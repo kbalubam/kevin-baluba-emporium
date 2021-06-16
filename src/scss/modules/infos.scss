@@ -1,0 +1,60 @@
+.infos{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10%;
+    
+    .infoTrust{
+        background-color: #f3f3f3;
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:5%;
+        padding-bottom:5%;
+        i{
+            font-size: 35px;
+            
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            background-color: rgba(52,58,64,255);
+            color: white;
+            border:1px solid rgba(52,58,64,255);
+            padding: 2%;
+            border-radius: 3px;
+        }
+        
+    }
+    .fastShipping{
+        background-color: rgba(223,67,64,255);
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:5%;
+        i{
+            color: white;
+            font-size: 35px;
+            
+        }
+        h3{
+            color: white;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+        button{
+            border: 1px solid white;
+            padding: 2%;
+            border-radius: 3px;
+        }
+        
+    }
+
+}
