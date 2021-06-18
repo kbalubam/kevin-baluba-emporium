@@ -1,0 +1,170 @@
+body{
+position: relative;
+font-family: 'Poppins', sans-serif;
+    header{
+
+    }
+    .pop-upp{
+        position: fixed;
+        margin-left: 20%;
+        width: 60%;
+        background-color: white;
+        padding: 2%;
+        border-radius: 4px;
+        display: none;
+        top:2px;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-name: glissement;
+        animation-iteration-count: 1;
+        form:nth-of-type(2){
+            display: none;
+        }
+         @keyframes glissement {
+             from {
+               margin-top: 1%;
+              
+             }
+          
+             to {
+               margin-top:3%;
+             }
+         }
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+            button{
+                background-color: rgba(223,67,64,255);
+                border: 1px solid rgba(223,67,64,255);
+                color: white;
+                height: 30px;
+                width: 30px;
+                border-radius: 5px;
+            }
+            button:hover{
+                opacity: 0.4;
+            }
+        }
+        .connInsp{
+            display: flex;
+            justify-content: center;
+            button:first-of-type{
+                margin-right: 3%;
+                background-color: rgba(223,67,64,255);
+                border: 1px solid rgba(223,67,64,255);
+                color: white;
+                border-radius: 5px;
+            }
+            button:first-of-type:hover{
+                opacity: 0.4;
+            }
+            button:last-of-type{
+                background-color: rgba(223,67,64,255);
+                border: 1px solid rgba(223,67,64,255);
+                color: white;
+                padding: 1%;
+                border-radius: 5px;
+            }
+            button:last-of-type:hover{
+                opacity: 0.4;
+            }
+        }
+        form{
+            .email{
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 30px;
+                    border: 1px solid grey;
+                    border-radius: 4px;
+                }
+                span{
+                    color: grey;
+                }
+            }
+            .password{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                input{
+                    height: 30px;
+                    border: 1px solid grey;
+                    border-radius: 4px;
+                }
+                .checkbox{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 2%;
+                }
+                
+            }
+            .confirm{
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 30px;
+                    border: 1px solid grey;
+                    border-radius: 4px;
+                }
+            }
+            .checkboxFemme{
+                display: flex;
+                align-items: center;
+            }
+            .checkboxHomme{
+                display: flex;
+                align-items: center;
+            }
+            .btnInscription{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                margin-bottom:2%;
+                button{
+                    background-color: rgb(41, 112, 245);
+                    border: 1px solid rgb(41, 112, 245);
+                    color: white;
+                    border-radius: 5px;
+                    padding:1%;
+                }
+            }
+            
+        }
+        button{
+            background-color: rgb(41, 112, 245);
+            border: 1px solid rgb(41, 112, 245);
+            color: white;
+            border-radius: 5px;
+            padding:1%;
+        }
+
+        .reseau{
+            display: flex;
+            justify-content: center;
+            margin-top:3%;
+            i{
+                font-size: 30px;
+                margin-right: 2%;
+            
+            }
+            i:first-of-type{
+                color: rgb(41, 112, 245);
+
+            }
+            i:nth-of-type(2){
+                color: black;
+            }
+            i:nth-of-type(3){
+                color: rgb(233, 193, 14);
+            }
+
+        }
+        
+    }
+    
+    
+      
+}

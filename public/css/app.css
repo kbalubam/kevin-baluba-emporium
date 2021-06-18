@@ -471,22 +471,6 @@ header .nav ul a:last-of-type button:last-of-type:hover {
     padding: 10px;
   }
 }
-.fashion {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.fashion .fashionGlob {
-  width: 60%;
-}
-.fashion .fashionGlob .hot {
-  width: 30%;
-}
-.fashion .fashionGlob .hot img {
-  width: 100%;
-}
-
 .infos {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -548,16 +532,202 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #383c44;
+  margin-top: 3%;
 }
 footer .footer1 {
   width: 70%;
-  background-color: #383c44;
 }
 footer .footer1 .about {
   display: flex;
 }
 footer .footer1 .about ul:first-of-type {
   width: 30%;
+  color: white;
+  list-style: none;
+}
+footer .footer1 .about ul:first-of-type li {
+  color: grey;
+}
+footer .footer1 .about ul:nth-of-type(2) {
+  color: white;
+}
+footer .footer1 .about ul:nth-of-type(3) {
+  color: white;
+}
+footer .footer1 .about ul:nth-of-type(3) li {
+  list-style: none;
+  margin-bottom: 3%;
+}
+footer .footer1 .about ul:nth-of-type(3) li span {
+  margin-right: 3%;
+  border: 1px solid grey;
+  color: grey;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 5px;
+}
+
+.footer2 {
+  color: grey;
+  background-color: black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+body .pop-upp {
+  position: fixed;
+  margin-left: 20%;
+  width: 60%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 4px;
+  display: none;
+  top: 2px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-name: glissement;
+  animation-iteration-count: 1;
+}
+body .pop-upp form:nth-of-type(2) {
+  display: none;
+}
+@keyframes glissement {
+  from {
+    margin-top: 1%;
+  }
+  to {
+    margin-top: 3%;
+  }
+}
+body .pop-upp .title {
+  display: flex;
+  justify-content: space-between;
+}
+body .pop-upp .title button {
+  background-color: #df4340;
+  border: 1px solid #df4340;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+body .pop-upp .title button:hover {
+  opacity: 0.4;
+}
+body .pop-upp .connInsp {
+  display: flex;
+  justify-content: center;
+}
+body .pop-upp .connInsp button:first-of-type {
+  margin-right: 3%;
+  background-color: #df4340;
+  border: 1px solid #df4340;
+  color: white;
+  border-radius: 5px;
+}
+body .pop-upp .connInsp button:first-of-type:hover {
+  opacity: 0.4;
+}
+body .pop-upp .connInsp button:last-of-type {
+  background-color: #df4340;
+  border: 1px solid #df4340;
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+}
+body .pop-upp .connInsp button:last-of-type:hover {
+  opacity: 0.4;
+}
+body .pop-upp form .email {
+  display: flex;
+  flex-direction: column;
+}
+body .pop-upp form .email input {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+body .pop-upp form .email span {
+  color: grey;
+}
+body .pop-upp form .password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .pop-upp form .password input {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+body .pop-upp form .password .checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+body .pop-upp form .confirm {
+  display: flex;
+  flex-direction: column;
+}
+body .pop-upp form .confirm input {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+body .pop-upp form .checkboxFemme {
+  display: flex;
+  align-items: center;
+}
+body .pop-upp form .checkboxHomme {
+  display: flex;
+  align-items: center;
+}
+body .pop-upp form .btnInscription {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+body .pop-upp form .btnInscription button {
+  background-color: #2970f5;
+  border: 1px solid #2970f5;
+  color: white;
+  border-radius: 5px;
+  padding: 1%;
+}
+body .pop-upp button {
+  background-color: #2970f5;
+  border: 1px solid #2970f5;
+  color: white;
+  border-radius: 5px;
+  padding: 1%;
+}
+body .pop-upp .reseau {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+body .pop-upp .reseau i {
+  font-size: 30px;
+  margin-right: 2%;
+}
+body .pop-upp .reseau i:first-of-type {
+  color: #2970f5;
+}
+body .pop-upp .reseau i:nth-of-type(2) {
+  color: black;
+}
+body .pop-upp .reseau i:nth-of-type(3) {
+  color: #e9c10e;
 }
 
 /*!
