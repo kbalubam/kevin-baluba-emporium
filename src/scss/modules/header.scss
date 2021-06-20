@@ -4,15 +4,31 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .en-te{
+        width: 100%;
+        
+        
+    }
     h1{
         // font-size: 300%;
+        text-align: center;
     }
     .nav{
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
         ul{
             display: flex;
             list-style: none;
             justify-content: space-evenly;
+            width: 70%;
             a{
                 text-decoration: none;
                 color: black;
