@@ -39,11 +39,12 @@ header .nav ul a {
   text-decoration: none;
   color: black;
 }
-header .nav ul a li:hover {
+header .nav ul a .connex {
   border: 1px solid #6c757d;
   color: white;
   background-color: #6c757d;
   padding: 5px;
+  border-radius: 5px;
 }
 header .nav ul a:last-of-type {
   display: flex;
@@ -258,14 +259,11 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   position: absolute;
   width: 100%;
   bottom: -4px;
-  animation-name: opaci;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  display: none;
-  animation-fill-mode: forwards;
+  opacity: 0;
+  transition: 1s ease-in;
 }
 .products .productGlob .range1 .product1 .img1 .view .black {
+  height: 40px;
   width: 50%;
   background-color: black;
 }
@@ -277,6 +275,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   align-items: center;
 }
 .products .productGlob .range1 .product1 .img1 .view .red {
+  height: 40px;
   width: 50%;
   background-color: red;
 }
@@ -331,17 +330,10 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 .products .productGlob .range1 .product1 .prix2 .saleProduct .prixbarre p:nth-of-type(2) {
   color: #df4340;
 }
-
-@keyframes opaci {
-  from {
-    opacity: 0;
-    height: 40px;
-  }
-  to {
-    opacity: 0.7;
-    height: 60px;
-  }
+.products .productGlob .range1 .product1:hover .view {
+  opacity: 1;
 }
+
 @media (min-width: 320px) and (max-width: 641px) {
   .product1 .img1 .view .black {
     height: 10px;
@@ -449,6 +441,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   width: 100%;
   background-image: url("../../../public/img/cta-bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-position-y: center;
   display: flex;
   flex-direction: column;
