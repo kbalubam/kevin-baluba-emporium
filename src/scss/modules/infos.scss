@@ -14,7 +14,7 @@
         padding-top:5%;
         padding-bottom:5%;
         i{
-            font-size: 35px;
+            // font-size: 35px;
             
         }
         p{
@@ -39,7 +39,7 @@
         padding-top:5%;
         i{
             color: white;
-            font-size: 35px;
+            // font-size: 35px;
             
         }
         h3{
@@ -58,3 +58,37 @@
     }
 
 }
+
+
+@media (min-width:320px) and (max-width:641px){
+    .infoTrust{
+        p{
+            font-size:8px;
+
+        }
+        h3{
+            font-size: 10px;
+        }
+    }
+    .fastShipping{
+        p{
+            font-size:8px;
+
+        }
+        h3{
+            font-size: 10px;
+        }
+    }
+}
+@media(min-width:642px) and (max-width:1007px){
+    i{
+        font-size: 35px;
+    }
+}
+
+@media(min-width:1008px){
+    i{
+        font-size: 35px;
+    }
+}
+

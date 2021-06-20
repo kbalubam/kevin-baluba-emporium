@@ -8,8 +8,9 @@ let glob=document.querySelector(".productGlob");
 
 glob.addEventListener("mouseover", (e)=>{
     product.forEach(elem=>{
-            if(e.target==elem){
+        if(e.target==elem){
             view[product.indexOf(elem)].setAttribute("style", "display :flex");
+
             
         }
     })

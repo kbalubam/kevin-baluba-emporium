@@ -7,11 +7,11 @@ footer{
     background-color: #383c44;
     margin-top: 3%;
     .footer1{
-        width: 70%;
+        // width: 70%;
         .about{
             display: flex;
             ul:first-of-type{
-                width: 30%;
+                 width: 30%;
                 color: white;
                 list-style: none;
                 li{
@@ -48,4 +48,34 @@ footer{
     padding-bottom: 3%;
     display: flex;
     justify-content: center;
+}
+
+@media(min-width:320px) and (max-width:641px){
+ .footer1{
+     
+        .about{
+            width: 100%;
+            ul{
+                font-size: 7px;
+                
+            }
+            ul:nth-of-type(2){
+                display: none;
+                
+            }
+            ul:nth-of-type(3){
+                
+            }
+        }
+
+    }   
+}
+.footer2{
+    font-size: 8px;
+}
+
+@media (min-width:642px) and (max-width:1007px){
+    ul{
+        font-size:12px;
+    }
 }

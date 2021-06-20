@@ -15,7 +15,7 @@ header {
   border-bottom: 1px solid black;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 header .en-te {
@@ -75,11 +75,12 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 
 @media (min-width: 320px) and (max-width: 641px) {
   h1 {
-    font-size: 200%;
+    font-size: 10px;
   }
 
   ul {
     flex-direction: column;
+    font-size: 8px;
   }
 }
 @media (min-width: 642px) and (max-width: 1007px) {
@@ -262,6 +263,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   display: none;
+  animation-fill-mode: forwards;
 }
 .products .productGlob .range1 .product1 .img1 .view .black {
   width: 50%;
@@ -587,9 +589,6 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.infos .infoTrust i {
-  font-size: 35px;
-}
 .infos .infoTrust p {
   text-align: center;
 }
@@ -611,7 +610,6 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 }
 .infos .fastShipping i {
   color: white;
-  font-size: 35px;
 }
 .infos .fastShipping h3 {
   color: white;
@@ -626,6 +624,31 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   border-radius: 3px;
 }
 
+@media (min-width: 320px) and (max-width: 641px) {
+  .infoTrust p {
+    font-size: 8px;
+  }
+  .infoTrust h3 {
+    font-size: 10px;
+  }
+
+  .fastShipping p {
+    font-size: 8px;
+  }
+  .fastShipping h3 {
+    font-size: 10px;
+  }
+}
+@media (min-width: 642px) and (max-width: 1007px) {
+  i {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1008px) {
+  i {
+    font-size: 35px;
+  }
+}
 footer {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -634,9 +657,6 @@ footer {
   align-items: center;
   background-color: #383c44;
   margin-top: 3%;
-}
-footer .footer1 {
-  width: 70%;
 }
 footer .footer1 .about {
   display: flex;
@@ -677,6 +697,26 @@ footer .footer1 .about ul:nth-of-type(3) li span {
   justify-content: center;
 }
 
+@media (min-width: 320px) and (max-width: 641px) {
+  .footer1 .about {
+    width: 100%;
+  }
+  .footer1 .about ul {
+    font-size: 7px;
+  }
+  .footer1 .about ul:nth-of-type(2) {
+    display: none;
+  }
+}
+.footer2 {
+  font-size: 8px;
+}
+
+@media (min-width: 642px) and (max-width: 1007px) {
+  ul {
+    font-size: 12px;
+  }
+}
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
