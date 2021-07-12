@@ -46,6 +46,9 @@ header .nav ul a .connex {
   padding: 5px;
   border-radius: 5px;
 }
+header .nav ul a:hover {
+  color: grey;
+}
 header .nav ul a:last-of-type {
   display: flex;
   align-items: center;
@@ -57,10 +60,6 @@ header .nav ul a:last-of-type button:first-of-type {
   background-color: white;
   margin-right: 5px;
 }
-header .nav ul a:last-of-type button:first-of-type:hover {
-  width: 20px;
-  height: 20px;
-}
 header .nav ul a:last-of-type button:last-of-type {
   width: 15px;
   height: 15px;
@@ -68,10 +67,6 @@ header .nav ul a:last-of-type button:last-of-type {
   border-radius: 5px;
   border: 1px solid black;
   margin-right: 5px;
-}
-header .nav ul a:last-of-type button:last-of-type:hover {
-  width: 20px;
-  height: 20px;
 }
 
 @media (min-width: 320px) and (max-width: 641px) {
@@ -159,6 +154,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 .galerie3 .living h1:hover {
   font-size: 35px;
   transition: 1s;
+  cursor: pointer;
 }
 .galerie3 .sale {
   display: flex;
@@ -177,6 +173,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 .galerie3 .sale h1:hover {
   font-size: 35px;
   transition: 1s;
+  cursor: pointer;
 }
 .galerie3 .clothes {
   display: flex;
@@ -195,6 +192,7 @@ header .nav ul a:last-of-type button:last-of-type:hover {
 .galerie3 .clothes h1:hover {
   font-size: 35px;
   transition: 1s;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 641px) {
