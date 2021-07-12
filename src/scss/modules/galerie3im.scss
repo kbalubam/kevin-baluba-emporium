@@ -21,7 +21,13 @@
             padding-left: 10%;
             padding-right: 10%;
         }
+        h1:hover{
+            font-size:35px;
+            transition: 1s;
+            cursor: pointer;
+        }
     }
+
     .sale{
         // width: 32%;
         // height: 200px;
@@ -36,6 +42,11 @@
         font-weight: normal;
         padding-left: 10%;
         padding-right: 10%;
+        }
+        h1:hover{
+            font-size:35px;
+            transition: 1s;
+            cursor: pointer;
         }
     }
     .clothes{
@@ -52,6 +63,11 @@
         font-weight: normal;
         padding-left: 10%;
         padding-right: 10%;
+        }
+        h1:hover{
+            font-size:35px;
+            transition: 1s;
+            cursor: pointer;
         }
         
     }

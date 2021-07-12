@@ -156,6 +156,10 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   padding-left: 10%;
   padding-right: 10%;
 }
+.galerie3 .living h1:hover {
+  font-size: 35px;
+  transition: 1s;
+}
 .galerie3 .sale {
   display: flex;
   justify-content: center;
@@ -170,6 +174,10 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   padding-left: 10%;
   padding-right: 10%;
 }
+.galerie3 .sale h1:hover {
+  font-size: 35px;
+  transition: 1s;
+}
 .galerie3 .clothes {
   display: flex;
   justify-content: center;
@@ -183,6 +191,10 @@ header .nav ul a:last-of-type button:last-of-type:hover {
   font-weight: normal;
   padding-left: 10%;
   padding-right: 10%;
+}
+.galerie3 .clothes h1:hover {
+  font-size: 35px;
+  transition: 1s;
 }
 
 @media (min-width: 320px) and (max-width: 641px) {
@@ -723,22 +735,10 @@ body .pop-upp {
   border-radius: 4px;
   display: none;
   top: 2px;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
-  animation-name: glissement;
-  animation-iteration-count: 1;
   z-index: 1;
 }
 body .pop-upp form:nth-of-type(2) {
   display: none;
-}
-@keyframes glissement {
-  from {
-    margin-top: 1%;
-  }
-  to {
-    margin-top: 3%;
-  }
 }
 body .pop-upp .title {
   display: flex;
